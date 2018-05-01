@@ -170,7 +170,7 @@ h1 {
   text-align: center;
   color: #AAAAAA;
   line-height: .23rem;
-  vertical-align: text-bottom;
+  vertical-align: middle;
 }
 .terms a {
   color: #b50029;
@@ -179,11 +179,15 @@ h1 {
   width: .24rem;
   height: .24rem;
   -webkit-appearance: none;
-  /* margin: 0 .08rem 0 0; */
   border: none;
   margin: 0;
   outline: none;
-  vertical-align: text-bottom;
+  vertical-align: middle;
+}
+.terms input:checked {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
 }
 .terms input::before {
   content: "";
