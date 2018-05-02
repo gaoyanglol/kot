@@ -2,3 +2,91 @@
 
 @import url(style.css);
 
+.container  h1 span {
+  display: inline-block;
+  width: .6rem;
+  height: .6rem;
+  margin-right: .14rem;
+  background: url(../image/done.png) no-repeat center / 96%;
+  vertical-align: bottom;
+}
+.invite-code p {
+  position: relative;
+  margin: 0;
+  background: #f0f0f0;
+  line-height: 1;  
+  color: #b50029;
+  font-size: .42rem;
+  font-weight: bold;
+  padding: .45rem 0 .38rem;
+  text-align: center;
+}
+.invite-code p:before{
+  content: " ";
+  position: absolute;
+  top: 0rem;
+  right: 0;
+  left: 0;
+  height: 1px;
+  border-top: 1px solid #dbdada;
+  color: #C7C7C7;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+.invite-code p:after{
+  content: " ";
+  position: absolute;
+  bottom: -.02rem;
+  right: 0;
+  left: 0;
+  height: 1px;
+  border-bottom: 1px solid #dbdada;
+  color: #C7C7C7;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+.pre-msg {
+  display: block;
+  position: absolute;
+  top: -.17rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: .22rem;
+  font-weight: normal;
+  color: #fff;
+  line-height: 1;
+  white-space: nowrap;  
+  padding: .06rem .21rem;
+  background: #b50029;
+  border-radius: 1rem;
+}
+.user-info {
+  position: relative;
+  margin-bottom: .4rem;
+  padding: .34rem .08rem .27rem;
+  color: #AAAAAA;
+}
+.user-info::after {
+  content: " ";
+  position: absolute;
+  bottom: -.03rem;
+  right: 0;
+  left: 0;
+  height: 1px;
+  border-bottom: 1px solid #dbdada;
+  color: #C7C7C7;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+.user-info span {
+  line-height: 1;
+}
+.user-info span:first-child {
+  color: #b50029;
+}
+.info-row {
+  margin-bottom: .3rem;
+}
+.info-row:last-child {
+  margin: 0;  
+}
