@@ -42,7 +42,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #a00014 url(../image/main-bg.png) no-repeat top / 100%;
+  background: url(../image/main-bg.png) no-repeat top / 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 a, button, input {
@@ -69,8 +69,8 @@ input:focus::-webkit-input-placeholder{
 }
 #main {
   width: 100%;
-  height: 8.43rem;
-  padding: 2.93rem 0 0;
+  height: 8.44rem;
+  padding: 2.92rem 0 0;
 }
 .container {
   -webkit-box-sizing: border-box;
@@ -185,9 +185,7 @@ h1 {
   vertical-align: middle;
 }
 .terms input:checked {
-  -webkit-appearance: none;
-  border: none;
-  outline: none;
+  background: none;
 }
 .terms input::before {
   content: "";
