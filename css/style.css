@@ -60,10 +60,16 @@ a {
   font-size: inherit;
 }
 input::-webkit-input-placeholder {
-  color: #AAAAAA;
+  color: #aaa;
 }
 input:focus::-webkit-input-placeholder{ 
-  color: #EEEEEE;
+  color: #ddd;
+}
+input:disabled, input[disabled] {
+  color: #aaa;
+  -webkit-text-fill-color: #ccc;
+  -webkit-opacity:1; 
+  opacity: 1;
 }
 .clear {
   zoom:1; 
@@ -160,8 +166,40 @@ h2 {
   line-height: .45rem;
   outline: none;
 }
-.msg-num + input {
-  width: 2.17rem;
+.msg-num + input,
+.validate-num + input {
+  width: 2rem;
+  padding-right: 0;
+}
+.validate-num-area {
+  width: 1.5rem;
+  float: right;
+}
+.validate-num-area a {
+  display: block;
+  width: .26rem;
+  height: .25rem;
+  margin: .1rem 0 0;
+  background: url(../image/reload.png) no-repeat center / 100%;
+  float: left;
+}
+.validate-num-code {
+  width: 1.12rem;
+  height: .45rem;
+  padding: 0;
+  border-radius: .04rem;
+  float: right;
+  background: #aaa;
+}
+.form-rows .get-msg-code {
+  -webkit-appearance: none;
+  background: #ececeb;
+  border-radius: .04rem;
+  width: 1.5rem;
+  height: .45rem;
+  float: right;
+  padding: 0;
+  color: #aaa;
 }
 .locale-select {
   position: relative;
