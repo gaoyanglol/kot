@@ -13,87 +13,90 @@
 <body>
   <div class="main">
     <div class="container">
-      <h2>中国银行首届《交易王者》模拟交易大赛</h2>
-      <div class="form-wrapper">
-        <div class="form-rows">
-          <div class="clear">
-              <label class="user-name clear">
-                <span></span>
-                姓名
-              </label>
-              <input type="text" required placeholder="必填" name="">
+      <form action="">
+        <h2>中国银行首届《交易王者》模拟交易大赛</h2>
+        <div class="form-wrapper">
+          <div class="form-rows">
+            <div class="clear">
+                <label class="user-name clear">
+                  <span></span>
+                  姓名
+                </label>
+                <input type="text" required placeholder="必填" name="">
+            </div>
+          </div>
+          <div class="form-rows">
+            <div class="clear">
+                <label class="phone-num clear">
+                  <span></span>
+                  手机号
+                </label>
+                <input type="text" required placeholder="每个手机号仅可报名一次" name="">
+            </div>
+          </div>
+          <div class="form-rows">
+            <div class="clear">
+                <label class="id-num clear">
+                  <span></span>
+                  身份证号
+                </label>
+                <input type="text" required placeholder="必填" name="">
+            </div>
+          </div>
+          <div class="form-rows">
+            <div class="clear">
+                <label class="locale clear">
+                  <span></span>
+                  参赛区域
+                </label>
+                <div class="locale-select">
+                  <select class='locale-select' id='prov'>
+                      <option value=''>请选择省</option>
+                  </select>
+                </div>
+                <div class="locale-select">
+                  <select class='locale-select' id='city'>
+                      <option value=''>请选择市</option>
+                  </select>
+                </div>
+            </div>
+          </div>
+          <div class="form-rows">
+            <div class="clear">
+                <label class="validate-num clear">
+                  <span></span>
+                  验证码
+                </label>
+                <input type="text" required placeholder="请输入" name="">
+                <div class="validate-num-area clear">
+                  <a href="javascript:;" id="reload_icon"></a>
+                  <div class="validate-num-code"></div>
+                </div>
+            </div>
+          </div>
+          <div class="form-rows">
+            <div class="clear">
+                <label class="msg-num clear">
+                  <span></span>
+                  短信验证码
+                </label>
+                <input type="text" required placeholder="请输入短信验证码" name="">
+                <input class="get-msg-code" type="button" id="msg_code" value="获取验证码" />
+            </div>
           </div>
         </div>
-        <div class="form-rows">
-          <div class="clear">
-              <label class="phone-num clear">
-                <span></span>
-                手机号
-              </label>
-              <input type="text" required placeholder="每个手机号仅可报名一次" name="">
-          </div>
+        <p class="terms">
+          <input type="checkbox">
+          已同意
+          <a href="">《中国银行交易王者大赛参赛须知》</a>
+        </p>
+        <button class="main-btn" type="submit">提交报名</button>
+        <div class="qr-codes clear">
+          <img src="./image/boc_metal_qrcode.png" alt="中行贵金属">
+          <img src="./image/test_trade_qrcode.png" alt="开始模拟交易">
         </div>
-        <div class="form-rows">
-          <div class="clear">
-              <label class="id-num clear">
-                <span></span>
-                身份证号
-              </label>
-              <input type="text" required placeholder="必填" name="">
-          </div>
-        </div>
-        <div class="form-rows">
-          <div class="clear">
-              <label class="locale clear">
-                <span></span>
-                参赛区域
-              </label>
-              <div class="locale-select">
-                <select class='locale-select' id='prov'>
-                    <option value=''>请选择省</option>
-                </select>
-              </div>
-              <div class="locale-select">
-                <select class='locale-select' id='city'>
-                    <option value=''>请选择市</option>
-                </select>
-              </div>
-          </div>
-        </div>
-        <div class="form-rows">
-          <div class="clear">
-              <label class="validate-num clear">
-                <span></span>
-                验证码
-              </label>
-              <input type="text" required placeholder="请输入" name="">
-              <div class="validate-num-area clear">
-                <a href="javascript:;" id="reload_icon"></a>
-                <div class="validate-num-code"></div>
-              </div>
-          </div>
-        </div>
-        <div class="form-rows">
-          <div class="clear">
-              <label class="msg-num clear">
-                <span></span>
-                短信验证码
-              </label>
-              <input type="text" required placeholder="请输入短信验证码" name="">
-              <input class="get-msg-code" type="button" id="msg_code" value="获取验证码" />
-          </div>
-        </div>
-      </div>
-      <p class="terms">
-        <input type="checkbox">
-        已同意
-        <a href="">《中国银行交易王者大赛参赛须知》</a>
-      </p>
-      <button class="main-btn" type="submit">提交报名</button>
-      <div class="qr-codes clear">
-        <img src="./image/boc_metal_qrcode.png" alt="中行贵金属">
-        <img src="./image/test_trade_qrcode.png" alt="开始模拟交易">
-      </div>
+      </form>
+      
     </div>
   </div>
   <script>
@@ -138,7 +141,7 @@
       document.getElementById("reload_icon").style.transition = "all .5s ease";
       document.getElementById("reload_icon").style.transform = "rotate(360deg)";      
       setTimeout(function() {
-        document.getElementById("reload_icon").removeAttribute("style")}, 1000);
+        document.getElementById("reload_icon").removeAttribute("style")}, 500);
   }
 </script>
 
