@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @media screen and (max-width: 321px) {
-  body, input  {
+  body, input, select  {
     font-size: 12px;
   }
   h1 {
@@ -16,7 +16,7 @@
 }
 
 @media screen and (min-width: 321px) and (max-width:400px) {
-  body, input {
+  body, input, select {
     font-size: 14px;
   }
   h1 {
@@ -31,7 +31,7 @@
 }
 
 @media screen and (min-width: 400px) {
-  body, input  {
+  body, input, select  {
     font-size: 16px;
   }
   h1 {
@@ -45,16 +45,13 @@
   }
 }
 
-html {
-  width: 100%;
-}
 body {
   margin: 0;
   padding: 0;
   background: url(../image/main-bg.png) no-repeat top / 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
-a, button, input {
+a, button, input, select {
   -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
 }
 a {
@@ -77,7 +74,6 @@ input:focus::-webkit-input-placeholder{
   clear:both;
 }
 .main {
-  width: 100%;
   height: 8.44rem;
   padding: 2.92rem 0 0;
 }
@@ -154,7 +150,8 @@ h2 {
   width: .30rem;
   height: .45rem;
 }
-.form-rows input {
+.form-rows input,
+.form-rows select {
   width: 3.43rem;
   border: none;
   padding: 0 .16rem 0;
@@ -163,6 +160,38 @@ h2 {
   line-height: .45rem;
   outline: none;
 }
+.msg-num + input {
+  width: 2.17rem;
+}
+.locale-select {
+  position: relative;
+  width: 1.5rem;
+  height: .45rem;
+  margin-right: .1rem;
+  float: left;
+}
+.locale-select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -.04rem;
+  z-index: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: .08rem;
+  border-color: transparent;
+  border-style: solid;
+  border-top-color: #838281;
+}
+.form-rows select {
+  -webkit-appearance: none;
+  width: 100%;
+  text-align: left;
+  color: #AAAAAA;
+}
+
 .user-name span {
   background: url(../image/user_name.png) no-repeat center / 100%;
 }
